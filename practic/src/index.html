@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap practic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center">
+              Тема практичної роботи №2: "Знайомство з Bootstrap"
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <p>
+              <strong>Висновок:</strong> Ознайомився з основами Bootstrap,
+              основними елементами та документацією.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Закрити
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <style>
+          .navbar-brand:hover {
+            color: black;
+          }
+        </style>
+        <a class="navbar-brand text-success" href="#">Практична робота №2</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Виконав студент гр.122-22-1м
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Якимов Юрій</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="number"
+              min="1"
+              max="10"
+              placeholder="Оцінка"
+              aria-label="Rating"
+              style="width: 100px"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="button"
+              onclick="showMessage()"
+            >
+              Оцінити
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col">
+          <div class="card mt-5 mx-auto" style="width: 18rem">
+            <img
+              src="https://codigofacilito.com/system/articles/covers/000/000/043/original/html.jpg?1444827874"
+              class="card-img-top"
+              alt="HTML"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">HTML</h5>
+              <p class="card-text">
+                Основна мова розмітки для створення структури веб-сторінок та
+                визначення їх зовнішнього вигляду.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target=".modal"
+                >Натисніть!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-5 mx-auto" style="width: 18rem">
+            <img
+              src="https://webdesign-trends.net/wp/wp-content/uploads/2017/01/html-css_2-600x338.png"
+              class="card-img-top"
+              alt="CSS"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">CSS</h5>
+              <p class="card-text">
+                Мова стилів, для задання зовнішнього вигляду веб-сторінок,
+                стилювання елементів HTML.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target=".modal"
+                >Натисніть!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-5 mx-auto" style="width: 18rem">
+            <img
+              src="https://pic3.zhimg.com/v2-9490836b8e546027cec450d472c52d43_720w.jpg?source=172ae18b"
+              class="card-img-top"
+              alt="JS"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">JavaScript</h5>
+              <p class="card-text">
+                Мова програмування, яка використовується для надання взаємодії
+                та динаміки на веб-сторінках.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target=".modal"
+                >Натисніть!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card mt-5 mb-5 mx-auto" style="width: 18rem">
+            <img
+              src="https://free40.net/wp-content/uploads/2018/03/bootstrap-min.png"
+              class="card-img-top"
+              alt="Bootstrap"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">
+                Популярний фреймворк для розробки веб-сайтів і веб-додатків.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target=".modal"
+                >Натисніть!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-5 mb-5 mx-auto" style="width: 18rem">
+            <img
+              src="https://lh4.googleusercontent.com/CqjoqabvQ0yNp6yq4YxBbbajDy0Ihs-f0JrYHwInWNFZLnIdubEa3ES81I1qwiJy6LkNg3V1nm969JsrbztXy25ol3GR5EcbG3sfyGu6kEq10tGeDYpV9ZhHVETsGuJNU3OXgsaA"
+              class="card-img-top"
+              alt="ReactJS"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">ReactJS</h5>
+              <p class="card-text">
+                Відкритий JavaScript фреймворк для створення інтерфейсів
+                користувача.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target=".modal"
+                >Натисніть!</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-5 mb-5 mx-auto" style="width: 18rem">
+            <img
+              src="https://a.ilovecoding.org/thumb/dom.png"
+              class="card-img-top"
+              alt="DOM"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">DOM</h5>
+              <p class="card-text">
+                Інтерфейс для структури та взаємодії з об'єктами, які
+                представляють HTML, XML.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target=".modal"
+                >Натисніть!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="true"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://bdfreelancinginstitute.files.wordpress.com/2016/03/java.jpg"
+              class="d-block w-100"
+              alt="picture-1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://www.flexxus.com.ar/wp-content/uploads/2019/02/25e2f30a103dfee5ee8d753f84e399a2-500x383.jpg"
+              class="d-block w-100"
+              alt="picture-2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://technofaq.org/wp-content/uploads/2017/05/web-developer.jpg"
+              class="d-block w-100"
+              alt="picture-3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showMessage() {
+        alert("Чудово!");
+      }
+    </script>
+  </body>
+</html>
